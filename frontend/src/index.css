@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark text-cream min-h-screen;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold text-dark px-8 py-3 rounded-full font-semibold uppercase tracking-wider 
+           hover:bg-[#c49f2d] transition-all duration-200 border border-gold;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent text-cream px-8 py-3 rounded-full font-semibold uppercase tracking-wider 
+           border border-muted hover:border-gold hover:text-gold transition-all duration-200;
+  }
+  
+  .nav-link {
+    @apply text-cream hover:text-gold transition-colors duration-200 cursor-pointer;
+  }
+}
